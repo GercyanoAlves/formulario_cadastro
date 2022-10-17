@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<style>
+    body{
+    background-image: url("img/img_fundo.jpg");
+    background-color: royalblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+}
+</style>
+<body>
+    <div class="form">
+        <form method="POST" action="#">
+            <h1>Cadastro Geral - Pessoa Física</h1>
+            <h2>Cadastro</h2><br><br>
+            <label for="nome">Nome</label>
+            <input type="text" size="40" placeholder="Nome Completo">
+            <label for="cpf">CPF</label>
+            <input type="text" placeholder="123.456.789.00"><br><br>
+            <label for="email" >Email:</label>
+            <input type="text" size="40" placeholder="Email Válido">
+            <label for="rg">RG:</label>
+            <input type="text" placeholder="123456789012">
+            <label for="sexo">Sexo:</label> &nbsp;
+            <label for="mas">Masculino</label>
+            <input type="radio" name="opcao" id="op1">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="opcao" id="op1">
+            <label for="outro">Outros</label>
+            <input type="radio" name="opcao" id="op1"><br><br>
+            <label for="data">Data de Nascimento:</label>
+            <input type="date" name="data" id="data"><br><br>
+            <h2>Endereço</h2><br><br>
+            <label for="uf">Estado:</label>
+            <select name="estado" id="uf">
+                <option value="0">Escolha sua Região</option>
+                <optgroup label="Norte"></optgroup>
+                    <option value="1">Acre</option>
+                    <option value="2">Amazonas</option>
+                    <option value="3">Amapá</option>
+                    <option value="4">Pará</option>
+                    <option value="5">Rodônia</option>
+                    <option value="6">Roraima</option>
+                    <option value="7">Tocantins</option>
+                <optgroup label="Nordeste"></optgroup>
+                    <option value="8">Alagoas</option>
+                    <option value="9">Ceará</option>
+                    <option value="10">Bahia</option>
+                    <option value="11">Maranhão</option>
+                    <option value="12">Piauí</option>
+                    <option value="13">Pernanbuco</option>
+                    <option value="14">Paraíba</option>
+                    <option value="15">Rio Grande do Norte</option>
+                    <option value="16">Sergipe</option>
+                <optgroup label="Centro-Oeste"></optgroup>
+                    <option value="17">Goiás</option>
+                    <option value="18">Mato Grosso</option>
+                    <option value="19">Mato Grosso do Sul</option>
+                    <option value="20">Distrito Federal</option>
+                <optgroup label="Sul"></optgroup>
+                    <option value="21">Espírito Santo</option>
+                    <option value="22">Minas Gerais</option>
+                    <option value="23">Rio de Janeiro</option>
+                    <option value="24">São Paulo</option>
+                <optgroup label="Sudeste"></optgroup> 
+                    <option value="15">Paraná</option>
+                    <option value="15">Rio Grande do Sul</option>
+                    <option value="15">Santa Catarina</option>             
+            </select>
+            <label for="cidade">Cidade:</label>
+            <input type="text" placeholder="Cidade"><br><br>
+            <label for="cep">CEP:</label>
+            <input type="text" placeholder="12345-678">
+            <label for="bairro">Bairro:</label>
+            <input type="text" placeholder="Bairro"><br><br>
+            <label for="rua">Rua:</label>
+            <input type="text" size="30" placeholder="Logadouro">
+            <label for="nu">Número</label>
+            <input type="text" size="5" placeholder="Número"><br><br>
+            <label for="comp">Complemento</label>
+            <input type="text" size="30" placeholder="Andar, Apartamento, Bloco"><br><br>
+            <h2>Contato</h2>
+            <label for="telefone">Telefone:</label>
+            <input type="text" name="telefone" id="telefone">
+            <label for="celular">Celular:</label>
+            <input type="text" name="celular" id="celular"><br><br>
+            <h2>Autenficação</h2>
+            <label for="email">Email:</label>
+            <input type="email" size="30" placeholder="exemplo@email.com"><br>
+            <label for="conf_email">Confirmar Email:</label>
+            <input type="email" size="30" placeholder="exemplo@email.com"><br>
+            <label for="senha">Senha:</label>
+            <input type="password" required><br>
+            <label for="senha">Confirmar Senha:</label>
+            <input type="password" size="30" required><br><br>
+            <input type="submit" value="Enviar"> &nbsp;&nbsp;
+            <input type="button" value="Voltar"><br><br>
+            <div class="container">
+                <h2>Interesses</h2>
+                <div class="esporte">
+                    <br>
+                    <fieldset>
+                        <legend><h6>Esportes:</h6></legend><br>                       
+                        <input type="checkbox"><label for="natacao">Natação</label><br>
+                        <input type="checkbox"><label for="ginastica">Ginástica</label><br>
+                        <input type="checkbox"><label for="futebol">Futebol</label><br>
+                        <input type="checkbox"><label for="corrida">Corrida</label><br>
+                        <input type="checkbox"><label for="basquete">Basquete</label><br>
+                        <input type="checkbox"><label for="judo">Judô</label> <br>
+                        <input type="checkbox"><label for="boxe">Boxe</label> <br>
+                        <input type="checkbox"><label for="tenis">Tênis</label><br>
+                        <input type="checkbox"><label for="atletismo">Atletismo</label><br>   
+                    </fieldset>
+                </div>
+                <br><br>
+                <div class="aprender">
+                    <fieldset>
+                        <legend><h6>O que você deseja aprender?</h6></legend> <br>
+                        <input type="checkbox"><label for="html">HTML</label><br>
+                        <input type="checkbox"><label for="css">CSS</label> <br>
+                        <input type="checkbox"><label for="javascript">JavaScript</label> <br>
+                        <input type="checkbox"><label for="php">PHP</label> <br>
+                        <input type="checkbox"><label for="sql">SQL</label> <br>
+                        <input type="checkbox"><label for="python">Python</label> <br>
+                        <input type="checkbox"><label for="delphi">Delphi</label> <br>
+                        <input type="checkbox"><label for="uml">UML</label> <br>
+                    </fieldset>
+                </div> 
+                <br><br>
+                <div>
+                    <fieldset>
+                        <legend><h6>Como tomou ciência do curso de informática?</h6></legend> <br>
+                        <input type="checkbox"><label for="radio">Rádio</label><br>
+                        <input type="checkbox"><label for="jornal">Jornal Virtual</label> <br>
+                        <input type="checkbox"><label for="email">E-mail</label> <br>
+                        <input type="checkbox"><label for="ind_alu">Indicação de aluno</label> <br>
+                        <input type="checkbox"><label for="ind_prof">Indicação de professor</label> <br>
+                        <input type="checkbox"><label for="google">Google</label> <br>
+                        <input type="checkbox"><label for="facebook">Facebook</label> <br>
+                        <input type="checkbox"><label for="redes">Outras redes sociais</label> <br>
+                        <input type="checkbox"><label for="outdoor">Outdoors</label> <br>
+                        <input type="checkbox"><label for="">Outros</label> <br>
+                        <input type="text">
+                    </fieldset>
+                </div>
+            </div>    
+        </form>
+    </div>
+</body>
+</html>
